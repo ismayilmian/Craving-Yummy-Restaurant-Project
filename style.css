@@ -1,1 +1,317 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 
+body{
+     font-family: "Poppins", sans-serif;
+}
+img{
+    border-radius: 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+    
+}
+.navbar-links a{
+    text-decoration: none;
+    color: rgb(17,17,26);
+}
+
+.navbar-links a:hover{
+    text-decoration: underline;
+} 
+.toggle-icon{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    .toggle-icon{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    #servicecontainer{
+        display: none;
+    }
+    .service-container2{
+        flex-direction: column;
+    }
+    .signature-food-container{
+        flex-basis: 40%;
+    }
+   
+
+    
+}
+/* side navbar*/
+.side-navbar{
+    background-color: rgb(17,17,26);
+    color: white;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left:-60%;
+    padding: 20px;
+    transition: 1.5s;
+}
+.x-mark{
+    text-align: right;
+    color: white;
+}
+.x-mark:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.side-navbar-links{
+  
+    padding: 20px;
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+    color: white;
+    
+}
+.side-navbar-link a{
+    color: white;
+    text-decoration: none;
+}
+.side-navbar-link a:hover{
+    text-decoration: underline;
+    
+}
+/* header*/
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    
+}
+
+.header-button{
+    margin-top:10px ;
+    background-color: rgb(17,17,26);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*service*/
+.service{
+    padding: 20px;
+}
+.service-container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/*service container2*/
+.service-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.service-container2 div{
+    background-color: rgb(211, 211, 241);
+    border-radius: 10px;
+    padding: 10px;
+}
+    
+/*signature food*/
+.Signaturefood-heading{
+    text-align: center;
+    margin: 10px;
+    color: rgb(17,17,26);
+}
+.signature-food{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.signature-food-container{
+    position: relative;
+    flex-basis: 20px;
+    
+
+}
+    
+.signature-food-container button{
+    background-color: rgb(17,17,26);
+    color: white;
+    padding: 10px;
+    border: solid white 0.1px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 15%;
+    left: 23%;
+    text-align: center;
+
+}
+h5{
+    text-align: center;
+}
+.Signaturedesert-heading{
+    text-align: center;
+    margin: 10px;
+}
+
+/*news letter*/
+.news-letter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.news-letter input{
+    width: 60vw;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+.news-letter button{
+    background-color: rgb(17,17,26);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* footer*/
+.footer{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(17,17,26);
+    color: white;
+    
+    
+
+}
+
+/*collection page*/
+/*product-section*/
+.product-section{
+    margin-top: 20px;
+
+}
+.product-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    border: solid black 2px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/*products*/
+.product-search input{
+    border:none;
+    width: 100%;
+    background-color: transparent;
+}
+.product-search input:focus{
+    outline: none;
+}
+.products{
+    margin-top: 10px;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.products-box{
+    text-align: center;
+    flex-basis: 30%;
+}
+/*contact */
+.contact{
+    display: flex;
+    justify-content: center;
+   
+    
+    
+    
+}
+.contact-box{
+    margin-top: 20px;
+    background-color: rgb(17,17,26);
+    color: white;
+    width: 60%;
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    
+}
+.form-1{
+    padding: 20px;
+    
+}
+.form-2{
+    padding: 20px;
+    
+}
+.form-3{
+    padding: 20px;
+    
+}
+.inputform1{
+    width: 50vw;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+
+}
+.inputform2{
+    width: 50vw;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+
+}
+.inputform3{
+    width: 50vw;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+
+}
+.formcontainer button{
+    margin-top: 5px;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(48, 48, 180);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
